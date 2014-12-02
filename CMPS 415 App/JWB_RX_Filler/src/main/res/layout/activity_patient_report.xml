@@ -1,0 +1,83 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PatientReportActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next Patient"
+        android:id="@+id/btnNextPatient"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Patient:"
+        android:id="@+id/lblPatientName"
+        android:layout_below="@+id/btnNextPatient"
+        android:layout_alignLeft="@+id/btnNextPatient"
+        android:layout_alignStart="@+id/btnNextPatient"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="ID:"
+        android:id="@+id/lblPatientID"
+        android:layout_below="@+id/lblPatientName"
+        android:layout_alignLeft="@+id/lblPatientName"
+        android:layout_alignStart="@+id/lblPatientName" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/PatientID"
+        android:layout_below="@+id/lblPatientName"
+        android:layout_alignRight="@+id/PatientName"
+        android:layout_alignEnd="@+id/PatientName"
+        android:layout_toRightOf="@+id/lblPatientID" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/myLinearLayout"
+        android:layout_alignLeft="@+id/lblPatientID"
+        android:layout_alignStart="@+id/lblPatientID"
+        android:layout_alignRight="@+id/btnNextPatient"
+        android:layout_alignEnd="@+id/btnNextPatient"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10sp"
+        android:layout_below="@+id/lblPatientID"
+        android:layout_marginTop="15dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/PatientName"
+        android:layout_alignTop="@+id/lblPatientName"
+        android:layout_toRightOf="@+id/lblPatientName"
+        android:layout_alignRight="@+id/btnNextPatient"
+        android:layout_alignEnd="@+id/btnNextPatient" />
+
+    </RelativeLayout>
+
+</ScrollView>
